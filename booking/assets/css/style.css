@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*  ======================== 
+    Style Navbar 
+    ======================== */
+.navbar .navbar-brand {
+    font-family: 'Style Script', cursive;
+}
+  .navbar {
+    margin-top: 0;
+    transition: 0.6s;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+@media(min-width: 992px) {
+    .navbar-brand{
+        color: #000000;
+        transition: 0.6s;
+    }
+
+    .navbar-brand:hover {
+        color: #000000a4;
+        transition: 0.6s;
+    }
+
+    .nav-link {
+        color: #000000;
+        transition: 0.6s;
+    }
+
+    .nav-link:hover {
+        color: #ffffff;
+        background-color: #209dd8;
+        border-radius: 10px;
+    }
+
+    .active {
+        color: #ffffff!important;
+        background-color: #209dd8;
+        border-radius: 10px;
+        transition: 0.6s;
+    }
+
+    .sticky{ 
+        background-color: #ffffff;
+        border-bottom-right-radius: 24px;
+        border-bottom-left-radius: 24px;
+        margin: 0 24px;
+        padding: 18px;
+        box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+
+    .sticky .navbar-brand,
+    .sticky .nav-link {
+        color: #000000;
+        transition: 0.6s;
+    }
+
+    .sticky .navbar-brand:hover{
+        color: #000000a4;
+    }
+
+    .sticky .nav-link:hover{
+        color: #ffffff;
+    }
+}
+
+
+/*  ======================== 
+    Sections General
+    ======================== */
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f3f5fa;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+}
+
+.btn-primer {
+  background: #47b2e4;
+  border: 0;
+  padding: 12px 34px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.btn-primer:hover {
+  background: #209dd8;
+  color: #fff;
+}
+
+/*  ======================== 
+    Style Pricing
+    ======================== */
+.pricing .row {
+  padding-top: 40px;
+}
+
+.pricing .box {
+  padding: 60px 40px;
+  box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+  background: #fff;
+  height: 100%;
+  border-top: 4px solid #fff;
+  border-radius: 5px;
+}
+
+.pricing h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #37517e;
+}
+
+.pricing h4 {
+  font-size: 48px;
+  color: #37517e;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  margin-bottom: 25px;
+}
+
+.pricing h4 sup {
+  font-size: 28px;
+}
+
+.pricing h4 span {
+  color: #47b2e4;
+  font-size: 12px;
+  display: block;
+}
+
+.pricing ul {
+  padding: 20px 0;
+  list-style: none;
+  color: #999;
+  text-align: left;
+  line-height: 20px;
+}
+
+.pricing ul li {
+  padding: 10px 0 10px 30px;
+  position: relative;
+}
+
+.pricing ul i {
+  color: #28a745;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+.pricing ul .na {
+  color: #ccc;
+}
+
+.pricing ul .na i {
+  color: #ccc;
+}
+
+.pricing ul .na span {
+  text-decoration: line-through;
+}
+
+.pricing .buy-btn {
+  display: inline-block;
+  padding: 12px 35px;
+  border-radius: 50px;
+  color: #47b2e4;
+  transition: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  transition: 0.3s;
+  border: 1px solid #47b2e4;
+}
+
+.pricing .buy-btn:hover {
+  background: #47b2e4;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .pricing .box {
+    max-width: 60%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .pricing .box {
+    max-width: 80%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .pricing .box {
+    max-width: 100%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+
+
+/*  ======================== 
+    Style Booking
+    ======================== */
+.booking .email-form {
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.booking .email-form .form-group {
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.booking .email-form label {
+  padding-bottom: 8px;
+}
+
+.booking .email-form input,
+.booking .email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.booking .email-form input:focus,
+.booking .email-form select:focus,
+.booking .email-form textarea:focus {
+  border-color: #47b2e4;
+}
+
+.booking .email-form input,
+.booking .email-form select {
+  height: 44px;
+}
+
+.booking .email-form textarea {
+  padding: 10px 12px;
+}
+
+.booking .email-form .btn-kirim {
+  background: #47b2e4;
+  border: 0;
+  padding: 12px 34px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.booking .email-form .btn-kirim:hover {
+  background: #209dd8;
+}
+
+.booking .email-form .btn-loading {
+  background: #47b2e4;
+  border: 0;
+  padding: 12px 34px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+@media(min-width: 768px) {
+  .container-booking {
+    width: 560px;
+  }
+}
+
+
+
+/*  ======================== 
+    Style Footer
+    ======================== */
+.social-footer{
+  font-size: 16px;
+  color: #252525;
+  float: left;
+  width: 32px;
+  height: 32px;
+  background: #e7f5fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-footer:hover{
+  background: #47b2e4;
+  color: #fff;
+}
+
+
+
+/*  ======================== 
+    Style Preloader 
+    ======================== */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #47b2e4;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #47b2e4;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

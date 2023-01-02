@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*  ======================== 
+    Style Navbar 
+    ======================== */
+.navbar .navbar-brand {
+    font-family: 'Style Script', cursive;
+}
+
+.navbar {
+    margin-top: 0;
+    transition: 0.6s;
+}
+
+@media(min-width: 992px){
+    .navbar-brand{
+        color: #252525;
+        transition: 0.6s;
+    }
+
+    .navbar-brand:hover{
+        color: #25252565;
+        transition: 0.6s;
+    }
+
+    .nav-link{
+        color: #252525;
+        transition: 0.6s;
+    }
+
+    .nav-link:hover{
+        color: #fff;
+        background-color: #209dd8;
+        border-radius: 10px;
+    }
+
+    .active {
+        color: #ffffff!important;
+        background-color: #209dd8;
+        border-radius: 10px;
+        transition: 0.6s;
+    }
+
+    .sticky{ 
+        background-color: #ffffff;
+        border-bottom-right-radius: 24px;
+        border-bottom-left-radius: 24px;
+        margin: 0 24px;
+        padding: 18px;
+        box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+
+    .sticky .navbar-brand,
+    .sticky .nav-link {
+        color: #252525;
+        transition: 0.6s;
+    }
+
+    .sticky .navbar-brand:hover{
+        color: #25252565;
+    }
+
+    .sticky .nav-link:hover{
+        color: #ffffff;
+    }
+}
+
+
+/*  ======================== 
+    Style Deskripsi Tempat
+    ======================== */
+.deskripsi .info {
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.deskripsi .info i {
+  font-size: 20px;
+  background: #47b2e4;
+  color: #fff;
+  float: left;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.deskripsi .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #37517e;
+}
+
+.deskripsi .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #6182ba;
+}
+
+.deskripsi .info .price p {
+  padding-top: 5px;
+}
+
+.foto-tempat {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.foto-tempat img {
+  width: 100%;
+  object-fit: cover;
+  transition: 1s;
+}
+
+.foto-tempat img:hover {
+  transform: scale(1.1);
+}
+
+.deskripsi .deskripsi-tempat h4 {
+  padding-left: 12px;
+  margin-bottom: 10px;
+}
+
+.deskripsi .deskripsi-tempat p {
+  padding: 0 0 10px 40px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #6182ba;
+}
+
+.deskripsi .deskripsi-tempat ul {
+  padding: 0 0 10px 60px;
+  font-size: 16px;
+  color: #6182ba;
+}
+
+@media (max-width: 992px) {
+  .deskripsi .info {
+    margin-bottom: 24px;
+  }
+}
+
+
+/*  ======================== 
+    Style Footer
+    ======================== */
+.social-footer{
+  font-size: 16px;
+  color: #252525;
+  float: left;
+  width: 32px;
+  height: 32px;
+  background: #e7f5fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-footer:hover{
+  background: #47b2e4;
+  color: #fff;
+}
+
+
+/*  ======================== 
+    Sections General
+    ======================== */
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f3f5fa;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+}
+
+.btn-primer {
+  background: #47b2e4;
+  border: 0;
+  padding: 12px 34px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.btn-primer:hover {
+  background: #209dd8;
+  color: #fff;
+}
+
+

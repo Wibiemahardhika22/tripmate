@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap'); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*  ======================== 
+    Style Navbar 
+    ======================== */
+.navbar .navbar-brand {
+    font-family: 'Style Script', cursive;
+}
+  
+.navbar {
+    margin-top: 0;
+    transition: 0.6s;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+@media(min-width: 992px) {
+    .navbar-brand{
+        color: #000;
+        transition: 0.6s;
+    }
+
+    .navbar-brand:hover {
+        color: #000000a4;
+        transition: 0.6s;
+    }
+
+    .nav-link {
+        color: #000;
+        transition: 0.6s;
+    }
+
+    .nav-link:hover {
+        color: #ffffff;
+        background-color: #209dd8;
+        border-radius: 10px;
+    }
+
+    .active {
+        color: #ffffff!important;
+        background-color: #209dd8;
+        border-radius: 10px;
+        transition: 0.6s;
+    }
+
+    .sticky{ 
+        background-color: #ffffff;
+        border-bottom-right-radius: 24px;
+        border-bottom-left-radius: 24px;
+        margin: 0 24px;
+        padding: 18px;
+        box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+
+    .sticky .navbar-brand,
+    .sticky .nav-link {
+        color: #000000;
+        transition: 0.6s;
+    }
+
+    .sticky .navbar-brand:hover{
+        color: #000000a4;
+    }
+
+    .sticky .nav-link:hover{
+        color: #ffffff;
+    }
+}
+
+
+
+/*  ======================== 
+    Sections General
+    ======================== */
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f3f5fa;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 70px;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+}
+
+.btn-primer {
+  background: #47b2e4;
+  border: 0;
+  padding: 12px 34px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.btn-primer:hover {
+  background: #209dd8;
+  color: #fff;
+}
+  
+
+
+/*  ======================== 
+    Style Team
+    ======================== */
+.team {
+  margin: -60px 0 -50px 0;
+}
+
+.team .member {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  transition: 0.5s;
+}
+
+.team .member .pic {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
+}
+
+.team .member .pic img {
+  transition: ease-in-out 0.3s;
+}
+
+.team .member .member-info {
+  padding-left: 30px;
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #37517e;
+}
+
+.team .member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.team .member span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #cbd6e9;
+  bottom: 0;
+  left: 0;
+}
+
+.team .member .social {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.team .member .social a {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #eff2f8;
+}
+
+.team .member .social a i {
+  color: #37517e;
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.team .member .social a:hover {
+  background: #47b2e4;
+}
+
+.team .member .social a:hover i {
+  color: #fff;
+}
+
+.team .member .social a+a {
+  margin-left: 8px;
+}
+
+
+
+/*  ======================== 
+    Style Footer
+    ======================== */
+.social-footer{
+  font-size: 16px;
+  color: #252525;
+  float: left;
+  width: 32px;
+  height: 32px;
+  background: #e7f5fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-footer:hover{
+  background: #47b2e4;
+  color: #fff;
+}
