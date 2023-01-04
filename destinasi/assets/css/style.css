@@ -18,6 +18,7 @@ a {
     ======================== */
 .navbar .navbar-brand {
     font-family: 'Style Script', cursive;
+    font-size: 32px;
 }
 
 .navbar {
@@ -45,6 +46,10 @@ a {
         color: #ffffff;
         background-color: #209dd8;
         border-radius: 10px;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
     }
 
     .active {
@@ -149,7 +154,7 @@ section {
   
   @media(min-width: 992px){
       .banner{
-          margin-top: -78px;
+        margin-top: -90px;
       }
   
       .banner-content {

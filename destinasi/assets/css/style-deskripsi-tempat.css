@@ -47,6 +47,10 @@ a {
         border-radius: 10px;
     }
 
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
     .active {
         color: #ffffff!important;
         background-color: #209dd8;
