@@ -152,15 +152,21 @@ section {
   z-index: -1;
 }
 
-  @media(min-width: 992px){
-      .banner{
-        margin-top: -98px;
-      }
-  
-      .banner-content {
-        height: 105vh;
-      }
-  }
+@media(max-width: 991px) {
+    .banner {
+      margin-top: -8px;
+    }
+}
+
+@media(min-width: 992px){
+    .banner{
+      margin-top: -98px;
+    }
+
+    .banner-content {
+      height: 105vh;
+    }
+}
     
 
 
